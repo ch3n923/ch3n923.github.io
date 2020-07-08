@@ -107,7 +107,12 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="BST-Height"><a href="#BST-Height" class="headerlink" title="BST Height"></a>BST Height</h2><p>一棵二叉树的高度是其<strong>根结点(root)</strong> 至其 <strong>最深的结点(the deepest node)</strong> 的路径长度.</p>
+  <p><font size ="2"><strong><em>*本文章中有些用语并不规范，仅供参考。但这样使用对我个人而言更容易理解，如有更好的建议，欢迎评论区中提出</em></strong>。</font></p>
+<h1 id="Binary-Search-Tree"><a href="#Binary-Search-Tree" class="headerlink" title="Binary Search Tree"></a>Binary Search Tree</h1><p>一棵<strong>二叉查找树(BST)</strong>是一棵二叉树，其中每个结点都含有一个Comparable的键(以及相关联的值)且每个结点的键都大于其左子树中的任意结点的键而小于右子树的任意结点的键</p>
+<blockquote>
+<p>简单来说就是：<br>根结点的key比左子树的都大，比右子树的都小<br>或者<br>左子树的key都<strong>比根结点小</strong>，右子树的key都<strong>比根结点大</strong><br><img src="https://ae01.alicdn.com/kf/H84e538c0103840fa92a5b11bf64870785.jpg" alt="BST"></p>
+</blockquote>
+<h2 id="BST-Height"><a href="#BST-Height" class="headerlink" title="BST Height"></a>BST Height</h2><p>一棵二叉树的高度是其<strong>根结点(root)</strong> 至其 <strong>最深的结点(the deepest node)</strong> 的路径长度.</p>
 <p><strong><em>△一棵只有根结点的树，其高度为0</em></strong><br><img src="https://ae01.alicdn.com/kf/Hc66c75b329e341ca88e5780280e6642c3.jpg" alt="BST-Height"></p>
 <blockquote>
 <p><strong>BST Height Algorithm</strong><br><strong>BST高度计算算法</strong> (pesudo code)</p>
@@ -125,8 +130,10 @@
 <p><img src="https://ae01.alicdn.com/kf/H5fcdd461017e4a9783e77e6abb383fe5g.jpg" alt="BST-Pre-order"></p>
 <p>  output: 16 -&gt; 6 -&gt; 4 -&gt; 1 -&gt; 5 -&gt; 12 -&gt; 26 -&gt; 20 -&gt; 28 -&gt; 27</p>
 </blockquote>
-<h3 id="In-order"><a href="#In-order" class="headerlink" title="In-order"></a>In-order</h3><p>left -&gt; visit -&gt; right</p>
-<p>   output: 1 -&gt; 4 -&gt; 5 -&gt; 6 -&gt; 12 -&gt; 16 -&gt; 20 -&gt; 26 -&gt; 27 -&gt; 28</p>
+<h3 id="In-order"><a href="#In-order" class="headerlink" title="In-order"></a>In-order</h3><blockquote>
+<p><img src="https://ae01.alicdn.com/kf/Ha7aaf5ae34154396b28b9fc02b16775fh.jpg" alt="BST-Pre-order"><br>left -&gt; visit -&gt; right</p>
+<p>  output: 1 -&gt; 4 -&gt; 5 -&gt; 6 -&gt; 12 -&gt; 16 -&gt; 20 -&gt; 26 -&gt; 27 -&gt; 28</p>
+</blockquote>
 <h3 id="Post-order"><a href="#Post-order" class="headerlink" title="Post-order"></a>Post-order</h3><p>left -&gt; right -&gt; visit</p>
 <pre><code>output: 1 -&gt; 5 -&gt; 4 -&gt; 12 -&gt; 6 -&gt; 20 -&gt; 27 -&gt; 28 -&gt; 26 -&gt; 16</code></pre><p>(未完待续..)</p>
  
